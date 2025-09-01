@@ -1,0 +1,157 @@
+/* ===== Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Topbar ===== */
+.topbar {
+  background: #007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.btn-logout {
+  background: #dc3545;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-logout:hover {
+  background: #b52a37;
+  transform: scale(1.05);
+}
+
+/* ===== Layout ===== */
+.layout {
+  display: flex;
+  min-height: calc(100vh - 60px);
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.content h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* ===== Sidebar ===== */
+.sidebar-right {
+  width: 220px;
+  background: #fff;
+  border-left: 1px solid #ddd;
+  padding: 1.5rem 1rem;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.05);
+}
+.sidebar-right ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar-right li {
+  margin-bottom: 1rem;
+}
+.sidebar-right a {
+  text-decoration: none;
+  display: block;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+}
+.sidebar-right a.active,
+.sidebar-right a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* ===== Filters ===== */
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters input,
+.filters select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.btn-export {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-export:hover {
+  background: #218838;
+}
+
+/* ===== Table ===== */
+.table-container {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+thead {
+  background: #007bff;
+  color: #fff;
+}
+
+thead th {
+  padding: 0.8rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+tbody td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+tbody tr:hover {
+  background: #f9f9f9;
+}

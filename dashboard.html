@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Analysis System - Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Top Navbar -->
+  <header class="topbar">
+    <h2>Sales Analysis System</h2>
+    <button id="logoutBtn" class="btn-logout">Logout</button>
+  </header>
+
+  <!-- Layout with Right Sidebar -->
+  <div class="layout">
+    <!-- Main Content -->
+    <main class="content">
+      <h1>Dashboard</h1>
+
+      <!-- Summary Cards -->
+      <div class="summary-cards">
+        <div class="card">
+          <h3>Total Sales</h3>
+          <p id="totalSales">$0</p>
+        </div>
+        <div class="card">
+          <h3>Total Orders</h3>
+          <p id="totalOrders">0</p>
+        </div>
+        <div class="card">
+          <h3>Customers</h3>
+          <p id="totalCustomers">0</p>
+        </div>
+      </div>
+
+      <!-- Charts Section -->
+      <div class="charts-grid">
+        <div class="chart-card">
+          <h3>Sales by Category</h3>
+          <canvas id="barChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Sales Distribution</h3>
+          <canvas id="pieChart"></canvas>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <nav class="sidebar-right">
+      <ul>
+        <li><a href="dashboard.html" class="active">📊 Dashboard</a></li>
+        <li><a href="sales.html">🛒 Sales Entry</a></li>
+        <li><a href="reports.html">📑 Reports</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Scripts (order matters!) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/libs/charts.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
